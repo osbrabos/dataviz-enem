@@ -2,10 +2,11 @@ import streamlit as st
 from pycaret.regression import *
 import pandas as pd 
 
-def check_input(lc, ch, cn, mt, red):
+def check_input(scores):
     try:
-        scores = list(map(int, [lc, ch, cn, mt, red]))
-        if all((0<=scores[0]<=45, 0<=scores[1]<=45, 0<=scores[2]<=45, 0<=scores[3]<=45, 0<=scores[4]<=1000)):
+        for keys in scores.keys(): 
+            scores[keys] = int(scores[keys])
+        if all((0<=scores['ACERTOS_LC']<=45, 0<=scores['ACERTOS_CH']<=45, 0<=scores['ACERTOS_CN']<=45, 0<=scores['ACERTOS_MT']<=45, 0<=scores['REDACAO']<=1000)):
             return scores
         else:
             st.error('Um dos valores digitados não corresponde ao intervalo esperado. Verifique se os acertos estão entre 0 e 45 e a redação entre 0 e 1000.')
@@ -25,13 +26,14 @@ def write():
     red = st.text_input(label='Nota de Redação:', max_chars=4)
 
     if st.button('Gerar predição!'):
-        scores = check_input(lc, ch, cn, mt, red)
-        if scores is not None:
-            model_saved = load_model('enem_predictor')
-            scores_df = pd.DataFrame([scores[:4]], columns =['ACERTOS_LC', 'ACERTOS_CH', 'ACERTOS_CN', 'ACERTOS_MT'])
+        user_input = {'ACERTOS_LC': lc, 'ACERTOS_CH': ch, 'ACERTOS_CN': cn, 'ACERTOS_MT': mt, 'REDACAO':red}
+        validated_inputs = check_input(user_input)
+        if validated_inputs is not None:
+            model_saved = load_model('model/enem_predictor')
+            scores_df = pd.DataFrame(pd.DataFrame([list(validated_inputs.values())], columns=list(validated_inputs.keys()))).drop(columns='REDACAO')
             prediction = predict_model(model_saved, data=scores_df)
-            prediction['REDAÇÃO']=scores[4]
-            st.success(f"A média prevista para os dados recebidos é de: {(prediction[['Label', 'REDAÇÃO']].sum(axis=1)/5)[0]:.2f} pontos!")
+            prediction['REDACAO']=validated_inputs['REDACAO']
+            st.success(f"A média prevista para os dados recebidos é de: {(prediction[['Label', 'REDACAO']].sum(axis=1)/5)[0]:.2f} pontos!")
     
 
         

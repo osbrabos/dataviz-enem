@@ -2890,3 +2890,60 @@ Name: SOMA_NOTAS_OBJ, Length: 37138, dtype: float64, ml_usecase=regression, avai
 2020-11-28 06:59:48,847:INFO:Scoring test/hold-out set
 2020-11-28 06:59:49,504:INFO:Visual Rendered Successfully
 2020-11-28 06:59:49,632:INFO:plot_model() succesfully completed......................................
+2020-11-28 07:02:15,632:INFO:Initializing plot_model()
+2020-11-28 07:02:15,633:INFO:plot_model(plot=residuals, fold=None, use_train_data=False, verbose=True, display=None, estimator=<catboost.core.CatBoostRegressor object at 0x0000012727EEBB20>, feature_name=None, fit_kwargs=None, groups=None, label=False, save=False, scale=1, system=True)
+2020-11-28 07:02:15,633:INFO:Checking exceptions
+2020-11-28 07:02:15,633:INFO:Preparing display monitor
+2020-11-28 07:02:15,641:INFO:Preloading libraries
+2020-11-28 07:02:15,647:INFO:Copying training dataset
+2020-11-28 07:02:15,648:INFO:Copying test dataset
+2020-11-28 07:02:15,649:INFO:Plot type: residuals
+2020-11-28 07:02:15,688:INFO:Fitting Model
+2020-11-28 07:02:15,743:INFO:Scoring test/hold-out set
+2020-11-28 07:02:16,384:INFO:Visual Rendered Successfully
+2020-11-28 07:02:16,531:INFO:plot_model() succesfully completed......................................
+2020-11-28 07:02:25,130:INFO:Initializing plot_model()
+2020-11-28 07:02:25,130:INFO:plot_model(plot=parameter, fold=KFold(n_splits=10, random_state=55, shuffle=False), use_train_data=False, verbose=True, display=None, estimator=<catboost.core.CatBoostRegressor object at 0x0000012727EEBB20>, feature_name=None, fit_kwargs={}, groups=None, label=False, save=False, scale=1, system=True)
+2020-11-28 07:02:25,130:INFO:Checking exceptions
+2020-11-28 07:02:25,130:INFO:Preparing display monitor
+2020-11-28 07:02:25,138:INFO:Preloading libraries
+2020-11-28 07:02:25,144:INFO:Copying training dataset
+2020-11-28 07:02:25,145:INFO:Copying test dataset
+2020-11-28 07:02:25,146:INFO:Plot type: parameter
+2020-11-28 07:02:25,156:INFO:Visual Rendered Successfully
+2020-11-28 07:02:25,320:INFO:plot_model() succesfully completed......................................
+2020-11-28 07:02:32,631:INFO:Initializing plot_model()
+2020-11-28 07:02:32,631:INFO:plot_model(plot=feature_all, fold=KFold(n_splits=10, random_state=55, shuffle=False), use_train_data=False, verbose=True, display=None, estimator=<catboost.core.CatBoostRegressor object at 0x0000012727EEBB20>, feature_name=None, fit_kwargs={}, groups=None, label=False, save=False, scale=1, system=True)
+2020-11-28 07:02:32,631:INFO:Checking exceptions
+2020-11-28 07:02:32,632:INFO:Preparing display monitor
+2020-11-28 07:02:32,638:INFO:Preloading libraries
+2020-11-28 07:02:32,644:INFO:Copying training dataset
+2020-11-28 07:02:32,645:INFO:Copying test dataset
+2020-11-28 07:02:32,645:INFO:Plot type: feature_all
+2020-11-28 07:02:32,647:WARNING:No coef_ found. Trying feature_importances_
+2020-11-28 07:02:34,712:INFO:Initializing plot_model()
+2020-11-28 07:02:34,712:INFO:plot_model(plot=vc, fold=KFold(n_splits=10, random_state=55, shuffle=False), use_train_data=False, verbose=True, display=None, estimator=<catboost.core.CatBoostRegressor object at 0x0000012727EEBB20>, feature_name=None, fit_kwargs={}, groups=None, label=False, save=False, scale=1, system=True)
+2020-11-28 07:02:34,712:INFO:Checking exceptions
+2020-11-28 07:02:34,712:INFO:Preparing display monitor
+2020-11-28 07:02:34,718:INFO:Preloading libraries
+2020-11-28 07:02:34,725:INFO:Copying training dataset
+2020-11-28 07:02:34,725:INFO:Copying test dataset
+2020-11-28 07:02:34,726:INFO:Plot type: vc
+2020-11-28 07:02:34,728:INFO:Determining param_name
+2020-11-28 07:02:34,729:INFO:param_name: actual_estimator__depth
+2020-11-28 07:02:34,840:INFO:Fitting Model
+2020-11-28 07:03:56,006:INFO:Visual Rendered Successfully
+2020-11-28 07:03:56,154:INFO:plot_model() succesfully completed......................................
+2020-11-28 07:03:56,258:INFO:Initializing plot_model()
+2020-11-28 07:03:56,259:INFO:plot_model(plot=hyperparameters, fold=None, use_train_data=False, verbose=True, display=None, estimator=<catboost.core.CatBoostRegressor object at 0x0000012727EEBB20>, feature_name=None, fit_kwargs=None, groups=None, label=False, save=False, scale=1, system=True)
+2020-11-28 07:03:56,259:INFO:Checking exceptions
+2020-11-28 07:05:22,314:INFO:Initializing plot_model()
+2020-11-28 07:05:22,314:INFO:plot_model(plot=parameter, fold=None, use_train_data=False, verbose=True, display=None, estimator=<catboost.core.CatBoostRegressor object at 0x0000012727EEBB20>, feature_name=None, fit_kwargs=None, groups=None, label=False, save=False, scale=1, system=True)
+2020-11-28 07:05:22,314:INFO:Checking exceptions
+2020-11-28 07:05:22,315:INFO:Preparing display monitor
+2020-11-28 07:05:22,323:INFO:Preloading libraries
+2020-11-28 07:05:22,329:INFO:Copying training dataset
+2020-11-28 07:05:22,330:INFO:Copying test dataset
+2020-11-28 07:05:22,331:INFO:Plot type: parameter
+2020-11-28 07:05:22,343:INFO:Visual Rendered Successfully
+2020-11-28 07:05:22,531:INFO:plot_model() succesfully completed......................................
