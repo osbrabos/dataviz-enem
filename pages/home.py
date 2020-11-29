@@ -35,9 +35,3 @@ def write():
             prediction['REDACAO']=validated_inputs['REDACAO']
             st.success(f"A média prevista para os dados recebidos é de: {(prediction[['Label', 'REDACAO']].sum(axis=1)/5)[0]:.2f} pontos!")
     
-
-        
-
-    
-    
-    
