@@ -1,4 +1,5 @@
 *.csv
 *.xlsx
+*.dpkg
 seaborn estudo.ipynb
 Aulinha.ipynb
