@@ -25,11 +25,11 @@ Pellentesque mattis vitae erat quis placerat. Maecenas sit amet ante accumsan, m
 
 |           Role            | Name           |
 | :-----------------------: | -------------- |
-|      Data Wrangling       | Lucas Leonardo |
+|      General Analysis     | Lucas Leonardo |
 |      Social Analysis      | Mihael Guedes  |
 |    Economical Analysis    | Matheus Aragão |
 |      School Analysis      | Weybson Alves  |
-| MLOps and Product Manager | Wesley Alves   |
+|  Highest Scores Analysis and PM | Wesley Alves   |
 
 ### **Context**
 
