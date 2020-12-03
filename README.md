@@ -1,4 +1,4 @@
-# ENEM DataViz and Score Predictor
+# ENEM DataViz
 ![data anaylis](https://beyondtheory.co.uk/images/other/2016/08/Beyond-Theory-Data-Analysis-Landing-Page-graphic.png)
 
 Ut suscipit purus vitae sapien efficitur, eget mollis magna dictum. Vivamus vitae sapien at lacus luctus convallis. Nam quam urna, maximus vel libero a, pretium sodales tellus. Pellentesque interdum eros ut sagittis aliquet.
@@ -25,11 +25,11 @@ Pellentesque mattis vitae erat quis placerat. Maecenas sit amet ante accumsan, m
 
 |           Role            | Name           |
 | :-----------------------: | -------------- |
-|      Data Wrangling       | Lucas Leonardo |
+|      General Analysis     | Lucas Leonardo |
 |      Social Analysis      | Mihael Guedes  |
 |    Economical Analysis    | Matheus Aragão |
 |      School Analysis      | Weybson Alves  |
-| MLOps and Product Manager | Wesley Alves   |
+|  Highest Scores Analysis and PM | Wesley Alves   |
 
 ### **Context**
 
