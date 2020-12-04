@@ -29,7 +29,7 @@ Pellentesque mattis vitae erat quis placerat. Maecenas sit amet ante accumsan, m
 |      Social Analysis      | Mihael Guedes  |
 |    Economical Analysis    | Matheus Aragão |
 |      School Analysis      | Weybson Alves  |
-|  Highest Scores Analysis and PM | Wesley Alves   |
+| Product Manager | Wesley Alves   |
 
 ### **Context**
 
